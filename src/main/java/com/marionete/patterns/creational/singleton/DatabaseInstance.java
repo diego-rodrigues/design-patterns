@@ -12,8 +12,7 @@ public class DatabaseInstance {
     }
 
     public static DatabaseInstance getInstance() {
-        if (null == instance)
-            instance = new DatabaseInstance();
+        // if the instance is null, create a new one, if it exists, return the existing instance
         return instance;
     }
 

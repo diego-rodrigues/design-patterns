@@ -42,15 +42,10 @@ public class Car {
 
     public Builder toBuilder() {
         Builder builder = new Builder();
+
+        // add all attributes to the builder
         return builder
-                .fromModel(model)
-                .fromYear(year)
-                .withDoors(doors)
-                .fromModel(model)
-                .withColor(color)
-                .withAirConditioning(hasAirConditioning)
-                .withGps(hasGps)
-                .withRadio(hasRadio);
+                .fromModel(model);
     }
 
     public static class Builder {
@@ -75,46 +70,36 @@ public class Car {
         }
 
         public Builder fromYear(int year) {
-            this.year = year;
             return this;
         }
 
         public Builder withColor(String color) {
-            this.color = color;
             return this;
         }
 
         public Builder withDoors(int doors) {
-            this.doors = doors;
             return this;
         }
 
         public Builder withGps(boolean hasGps) {
-            this.hasGps = hasGps;
             return this;
         }
 
         public Builder withRadio(boolean hasRadio) {
-            this.hasRadio = hasRadio;
             return this;
         }
 
         public Builder withAirConditioning(boolean hasAirConditioning) {
-            this.hasAirConditioning = hasAirConditioning;
             return this;
         }
 
         public Builder allInCar() {
-            this.hasAirConditioning = true;
-            this.hasRadio = true;
-            this.hasGps = true;
+            // quickly start an "all-in" car which has air conditioning, radio and gps.
             return this;
         }
 
         public Builder simpleCar() {
-            this.hasGps = false;
-            this.hasRadio = false;
-            this.hasAirConditioning = false;
+            // quickly start a simple car which does not have any of the fancy stuff.
             return this;
         }
 
