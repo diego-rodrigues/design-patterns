@@ -1,7 +1,5 @@
 package com.marionete.patterns.creational.singleton;
 
-import javax.xml.crypto.Data;
-
 public class DatabaseInstance {
 
     private static DatabaseInstance instance;
