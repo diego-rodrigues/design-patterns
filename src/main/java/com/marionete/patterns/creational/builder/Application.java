@@ -1,5 +1,8 @@
 package com.marionete.patterns.creational.builder;
 
+/**
+ * Allows creating complex objects step-by-step.
+ */
 public class Application {
 
     public static void main(String[] args) {
