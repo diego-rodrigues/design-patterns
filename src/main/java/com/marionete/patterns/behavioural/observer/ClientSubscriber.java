@@ -18,7 +18,8 @@ public class ClientSubscriber implements Subscriber {
 
     @Override
     public void update(int priceContext) {
-        interested = priceContext <= priceLimit;
+        // update the interested property of a client.
+        // a client is only interested in being notified if the price context is lower or equal than it's limit (budget)
     }
 
     public boolean isInterested() {

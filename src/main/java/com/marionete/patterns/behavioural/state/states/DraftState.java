@@ -14,7 +14,7 @@ public class DraftState extends State {
     @Override
     public void publish() {
         System.out.println("Document will be sent to be reviewed.");
-        document.changeState(new ReviewState(document));
+        // it should go to review state
     }
 
     @Override

@@ -1,5 +1,8 @@
 package com.marionete.patterns.behavioural.chain;
 
+/**
+ * This pattern allows passing a request through a chain of classes.
+ */
 public class Application {
 
     public static void main(String[] args) {

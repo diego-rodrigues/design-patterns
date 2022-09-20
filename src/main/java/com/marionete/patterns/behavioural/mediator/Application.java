@@ -6,6 +6,9 @@ import com.marionete.patterns.behavioural.mediator.air.TowerControl;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Manages communications among complex classes through a Mediator class.
+ */
 public class Application {
 
     public static void main(String[] args) {

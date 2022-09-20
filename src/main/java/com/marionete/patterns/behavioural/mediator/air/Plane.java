@@ -13,7 +13,8 @@ public class Plane {
     }
 
     public boolean requestTakeOff() {
-        return towerControl.notify(this, "take-off");
+        // notify the tower control it wants to take off, return the response from the request to take off
+        return false;
     }
 
     protected void takeOff() {
@@ -21,7 +22,8 @@ public class Plane {
     }
 
     public boolean requestLand() {
-        return towerControl.notify(this, "land");
+        // notify the tower control it wants to land, return the response from the request to land
+        return false;
     }
 
     protected void land() {

@@ -13,7 +13,10 @@ public class UppercaseHandler implements Handler {
     public String handle(String request) {
         if (null == request) return "";
         if (request.length() > 0) {
-            String processedRequest = request.toUpperCase();
+
+            // change the request to all uppercase letters
+            String processedRequest = request;
+
             if (null != next)
                 return next.handle(processedRequest);
             else return processedRequest;

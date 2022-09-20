@@ -16,10 +16,7 @@ public class CalculatorCaretaker {
     }
 
     public void undo() {
-        if (!history.empty()) {
-            calculator.restore(history.pop());
-            System.out.println("After undo operation: " + calculator.toString());
-        }
+        // if there is an operation in the history, restore the calculator state
     }
 
     @Override

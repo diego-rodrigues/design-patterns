@@ -2,6 +2,9 @@ package com.marionete.patterns.behavioural.memento;
 
 import com.marionete.patterns.behavioural.memento.calculator.CalculatorCaretaker;
 
+/**
+ * It allows to save and restore previous states.
+ */
 public class Application {
 
     public static void main(String[] args) {

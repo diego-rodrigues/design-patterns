@@ -5,10 +5,11 @@ public class Context {
     private Strategy strategy;
 
     void setStrategy(Strategy s) {
-        strategy = s;
+        // the strategy becomes a property in the context object
     }
 
     int runStrategy(int a, int b) {
-        return strategy.execute(a, b);
+        // the strategy is executed using the arguments
+        return 0;
     }
 }

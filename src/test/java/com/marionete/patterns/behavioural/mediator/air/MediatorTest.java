@@ -1,7 +1,5 @@
 package com.marionete.patterns.behavioural.mediator.air;
 
-import com.marionete.patterns.behavioural.mediator.air.Plane;
-import com.marionete.patterns.behavioural.mediator.air.TowerControl;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
