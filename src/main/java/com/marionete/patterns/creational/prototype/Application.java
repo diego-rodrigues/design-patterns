@@ -7,6 +7,9 @@ import com.marionete.patterns.creational.prototype.shapes.Square;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Allows copying objects without coupling their logic.
+ */
 public class Application {
 
     public static void main(String[] args) {
