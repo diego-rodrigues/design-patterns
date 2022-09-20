@@ -14,6 +14,7 @@ public class OriginatorCalculator {
         supportedOperations.add("-");
         supportedOperations.add("/");
         supportedOperations.add("*");
+        supportedOperations.add("^");
     }
 
     public boolean calculate(String operation, int argument) {
@@ -35,6 +36,10 @@ public class OriginatorCalculator {
             }
             case "/" : {
                 value /= argument;
+                return true;
+            }
+            case "^" : {
+                value = (int) Math.pow(value, argument);
                 return true;
             }
             default: return false;
