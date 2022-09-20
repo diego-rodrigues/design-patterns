@@ -1,6 +1,5 @@
 package com.marionete.patterns.creational.factory;
 
-import com.marionete.patterns.creational.factory.transports.Plane;
 import com.marionete.patterns.creational.factory.types.BoatFactory;
 import com.marionete.patterns.creational.factory.types.PlaneFactory;
 import com.marionete.patterns.creational.factory.types.TruckFactory;

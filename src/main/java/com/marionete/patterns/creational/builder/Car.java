@@ -81,13 +81,11 @@ public class Car {
         }
 
         public Builder withColor(String color) {
-
             this.color = color;
             return this;
         }
 
         public Builder withDoors(int doors) {
-
             this.doors = doors;
             return this;
         }
