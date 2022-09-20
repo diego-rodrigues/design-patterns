@@ -1,9 +1,5 @@
 package com.marionete.patterns.behavioural.strategy;
 
-
-/**
- * It lets you define different algorithms in separate classes, making them interchangeable
- */
 public class Application {
 
     public static void main(String[] args) {

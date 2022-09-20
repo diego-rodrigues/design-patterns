@@ -3,9 +3,6 @@ package com.marionete.patterns.behavioural.iterator;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Allows traversing a collection without exposing its representation.
- */
 public class Application {
 
     public static void main(String[] args) {

@@ -21,7 +21,7 @@ public class CutHandler implements Handler {
         if (request.length() > cutNumber) {
 
             // change the request by cutting of the first characters
-            String processedRequest = request;
+            String processedRequest = request.substring(cutNumber);
 
             if (null != next)
                 return next.handle(processedRequest);

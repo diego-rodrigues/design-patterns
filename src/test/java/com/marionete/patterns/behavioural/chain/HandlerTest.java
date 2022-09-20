@@ -6,8 +6,7 @@ import org.junit.jupiter.api.Test;
 
 public class HandlerTest {
 
-    static UppercaseHandler uppercaseHandler;
-    static CutHandler cutHandler5, cutHandler3;
+    static Handler uppercaseHandler, cutHandler5, cutHandler3;
 
     @BeforeEach
     void init() {
@@ -65,6 +64,8 @@ public class HandlerTest {
     void testChallenge() {
         String input = "qwerty";
         String expected = "QWERTYQWERTY";
+
+        uppercaseHandler.setNext(new DoubleHandler());
 
         Assertions.assertEquals(expected,uppercaseHandler.handle(input));
     }

@@ -14,7 +14,7 @@ public class ApprovedState extends State {
     @Override
     public void publish() {
         System.out.println("Document is published.");
-        // it should go to published state
+        document.changeState(new PublishedState(document));
     }
 
     @Override

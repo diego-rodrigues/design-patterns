@@ -2,13 +2,13 @@ package com.marionete.patterns.behavioural.chain;
 
 import java.util.Locale;
 
-public class UppercaseHandler implements Handler {
+public class DoubleHandler implements Handler {
 
     private Handler next;
 
     @Override
     public void setNext(Handler h) {
-        next = h;
+        this.next = h;
     }
 
     @Override
@@ -16,8 +16,8 @@ public class UppercaseHandler implements Handler {
         if (null == request) return "";
         if (request.length() > 0) {
 
-            // change the request to all uppercase letters
-            String processedRequest = request.toUpperCase(Locale.ROOT);
+            // change the request to duplicate the word
+            String processedRequest = request + request;
 
             if (null != next)
                 return next.handle(processedRequest);

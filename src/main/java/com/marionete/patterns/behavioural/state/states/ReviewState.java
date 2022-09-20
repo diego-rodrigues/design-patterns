@@ -8,11 +8,12 @@ public class ReviewState extends State {
 
     @Override
     public void review(boolean isApproved) {
-        // if document is approved, it should go to approved state, if not, it should go back to draft state.
         if (isApproved) {
             System.out.println("Document is approved. It will be ready to be published.");
+            document.changeState(new ApprovedState(document));
         } else {
             System.out.println("Document is not approved. It should be rewritten.");
+            document.changeState(new DraftState(document));
         }
     }
 

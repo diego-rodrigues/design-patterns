@@ -22,9 +22,10 @@ public class AdultsProfileContainer implements Container {
 
         @Override
         public Profile getNext() {
-            // if the collection has next element, increment the index and return the next element
-            // otherwise, return null
-            return null;
+            if (hasNext()) {
+                index = next + 1;
+                return profiles.get(next);
+            } else return null;
         }
 
         @Override
