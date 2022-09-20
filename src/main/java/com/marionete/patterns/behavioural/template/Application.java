@@ -1,5 +1,9 @@
 package com.marionete.patterns.behavioural.template;
 
+/**
+ * Allows creating default algorithms, but subclasses can override specific steps of
+ * the algorithm without changing its structure.
+ */
 public class Application {
 
     public static void main(String[] args) {
