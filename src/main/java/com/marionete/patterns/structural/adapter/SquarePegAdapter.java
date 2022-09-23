@@ -12,7 +12,7 @@ public class SquarePegAdapter {
     }
 
     public double getRadius() {
-        // the square "radius" would be half of the diagonal times the square root of 2
+        // the square "radius" would be half of the width times the square root of 2
         return 0;
     }
 }

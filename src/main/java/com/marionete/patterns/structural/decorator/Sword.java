@@ -8,6 +8,6 @@ public class Sword extends WarriorDecorator {
 
     @Override
     public String equip() {
-        return super.equip();
+        return super.equip() + "";
     }
 }

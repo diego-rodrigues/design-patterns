@@ -6,5 +6,7 @@ public class AdvancedRemoteControl extends RemoteControl {
         super(d);
     }
 
-    public void mute() {}
+    public void mute() {
+        // sets volume to 0
+    }
 }
