@@ -1,5 +1,8 @@
 package com.marionete.patterns.structural.adapter;
 
+/**
+ * Allows incompatible interfaces to work together.
+ */
 public class Application {
 
     public static void main(String[] args) {

@@ -7,6 +7,7 @@ public class AdvancedRemoteControl extends RemoteControl {
     }
 
     public void mute() {
+        // sets volume to 0
         device.setVolume(0);
     }
 }
