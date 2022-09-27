@@ -25,7 +25,7 @@ public class ApplicationTest {
 
     @Test
     void testAppForPlanes() {
-        String expected = "I am a Plane and I transport by Sky";
+        String expected = "I am a Plane and I transport by Air";
         Assertions.assertEquals(expected, app.startTransport());
     }
 }
