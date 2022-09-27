@@ -8,8 +8,8 @@ import org.junit.jupiter.api.Test;
 
 public class ShapeTest {
 
-    final Circle c = new Circle(10, 2, 5, "white");
-    final Square s = new Square(3, 4, 5, "red");
+    final Shape c = new Circle(10, 2, 5, "white");
+    final Shape s = new Square(3, 4, 5, "red");
 
     Shape star;
 
